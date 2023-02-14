@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -104,4 +104,74 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 13% 0 13%;
+}
+
+.home_title {
+  margin-bottom: 3rem;
+}
+
+.home_title h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.home_title h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background: linear-gradient(to bottom, transparent, rgb(var(--tile-end-rgb)))
+    rgb(var(--tile-start-rgb));
+  background-blend-mode: multiply;
+  border: 1px solid rgb(var(--tile-border-rgb));
+  box-shadow: 0 0 0 1px rgb(var(--tile-border-rgb));
+  backdrop-filter: blur(2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.products {
+  margin: auto;
+}
+
+.card_aulas_all {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 2%;
+  width: 30%;
+  height: 100%;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.card_aulas_link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 20px 0;
 }
